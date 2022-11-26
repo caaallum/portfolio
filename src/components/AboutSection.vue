@@ -14,7 +14,8 @@
                 <h3>Languages</h3>
                 <div class="md-2 mr-2 flex align-items-center flex-wrap">
                     <i class="md-2 mr-2 devicon-linux-plain" v-tooltip.bottom="'Linux'"></i>
-                    <i class="md-2 mr-2 devicon-apple-plain" v-tooltip.bottom="'Apple'"></i>
+                    <i class="md-2 mr-2 devicon-apple-plain" v-tooltip.bottom="'Apple iOS/MacOSX'"></i>
+                    <i class="md-2 mr-2 devicon-android-plain" v-tooltip.bottom="'Android'"></i>
                     <i class="md-2 mr-2 devicon-git-plain" v-tooltip.bottom="'Git'"></i>
                     <i class="md-2 mr-2 devicon-github-plain" v-tooltip.bottom="'Github'"></i>
                     <i class="md-2 mr-2 devicon-gitlab-plain" v-tooltip.bottom="'Gitlab'"></i>
