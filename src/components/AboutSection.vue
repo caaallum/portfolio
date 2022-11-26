@@ -8,10 +8,11 @@
                     <Chip label="Mountain Biking" class="md-2 mr-2" />
                     <Chip label="Skateboarding" class="md-2 mr-2" />
                     <Chip label="Rock Climbing" class="md-2 mr-2" />
+                    <Chip label="Surfing" class="md-2 mr-2" />
                     <Chip label="Clothes" class="md-2 mr-2" />
                     <Chip label="Tech" class="md-2 mr-2" />
                 </div>
-                <h3>Languages</h3>
+                <h3>Languages, Frameworks & Platforms</h3>
                 <div class="md-2 mr-2 flex align-items-center flex-wrap">
                     <i class="md-2 mr-2 devicon-linux-plain" v-tooltip.bottom="'Linux'"></i>
                     <i class="md-2 mr-2 devicon-apple-plain" v-tooltip.bottom="'Apple iOS/MacOSX'"></i>
@@ -26,6 +27,9 @@
                     <i class="md-2 mr-2 devicon-python-plain" v-tooltip.bottom="'Python'"></i>
                     <i class="md-2 mr-2 devicon-php-plain" v-tooltip.bottom="'PHP'"></i>
                     <i class="md-2 mr-2 devicon-javascript-plain" v-tooltip.bottom="'JavaScript'"></i>
+                    <i class="md-2 mr-2 devicon-sass-plain" v-tooltip.bottom="'Sass'"></i>
+                    <i class="md-2 mr-2 devicon-mysql-plain" v-tooltip.bottom="'MySQL'"></i>
+                    <i class="md-2 mr-2 devicon-mongodb-plain" v-tooltip.bottom="'MongoDB'"></i>
                 </div>
             </div>
         </div>
@@ -46,7 +50,7 @@ export default {
             images: [
                 {
                     index: '0',
-                    alt: 'surfing1',
+                    alt: 'mtb1',
                 },
                 {
                     index: '1',
@@ -58,11 +62,11 @@ export default {
                 },
                 {
                     index: '3',
-                    alt: 'mtb1'
+                    alt: 'mtb2'
                 },
                 {
                     index: '4',
-                    alt: 'mtb1'
+                    alt: 'surfing'
                 }
             ]
         }
