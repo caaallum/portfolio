@@ -59,4 +59,8 @@ h1, h2, h3, h4, h5, p, .p-button-label {
 .fp-watermark {
   display: none;
 }
+
+img {
+  filter: drop-shadow(0 0 0.75rem black);
+}
 </style>
