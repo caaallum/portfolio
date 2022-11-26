@@ -12,7 +12,7 @@
         </div>
         <div class="mb-2">
             <h3>Message:</h3>
-            <TextArea :autoResize="true" rows="5" cols="30" id="message" v-model="message" />
+            <TextArea :autoResize="true" rows="5" cols="22" id="message" v-model="message" />
         </div>
         <Button label="Submit" @click="submit()"/>
 
