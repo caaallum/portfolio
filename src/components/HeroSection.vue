@@ -7,7 +7,7 @@
             </div>
         </div>
         <div class="col-12 md:col-6 lg:col-3">
-            <img alt="me" src="../assets/header.png" />
+            <Image alt="me" src="header.png" />
         </div>
 
     </div>
@@ -18,9 +18,3 @@ export default {
 
 }
 </script>
-
-<style lang="scss" scoped>
-img {
-    filter: drop-shadow(0 0 0.75rem black);
-}
-</style>
