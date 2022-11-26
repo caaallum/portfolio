@@ -20,12 +20,10 @@ export default {
                 {
                     title: 'Woodlands Academy',
                     time: '2009-2014',
-                    info: 'My secondary school was the Woodlands Academy in coventry.',
                 },
                 {
                     title: 'Coventry City College',
                     time: '2015-2017',
-                    info: 'I studied Game Design in College'
                 },
                 {
                     title: 'Started at NetworkLtd',
