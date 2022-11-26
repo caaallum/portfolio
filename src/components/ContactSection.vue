@@ -11,7 +11,7 @@
         </div>
         <div class="mb-2">
             <h3>Message:</h3>
-            <InputText id="message" v-model="message" />
+            <Textarea :autoResize="true" rows="5" cols="30" id="message" v-model="message" />
         </div>
         <Button label="Submit" />
 

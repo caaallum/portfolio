@@ -55,4 +55,8 @@ h1, h2, h3, h4, h5, p, .p-button-label {
 .fp-overflow {
   overflow-y: unset !important;
 }
+
+.fp-watermark {
+  display: none;
+}
 </style>
