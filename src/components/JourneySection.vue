@@ -1,5 +1,6 @@
 <template>
-    <div class="grid justify-content-center align-items-center">
+    <div class="flex flex-column justify-content-center align-items-center">
+        <h1>Journey</h1>
         <Timeline :value="timeline" layout="vertical" align="alternate">
             <template #content="slotProps">
                 <h3>{{slotProps.item.title}}</h3>

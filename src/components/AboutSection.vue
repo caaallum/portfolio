@@ -1,10 +1,10 @@
 <template>
-    <div class="flex align-items-center justify-content-center">
+    <div class="flex flex-wrap align-items-center justify-content-center">
         <div class="md-2 mr-2">
-            <div class="flex flex-column">
+            <div class="flex align-items-center flex-column">
                 <h1>About Me</h1>
                 <h3>Hobbies & Interests</h3>
-                <div class="md-2 mr-2 flex flex-wrap">
+                <div class="md-2 mr-2 flex align-items-center flex-wrap">
                     <Chip label="Mountain Biking" class="md-2 mr-2" />
                     <Chip label="Skateboarding" class="md-2 mr-2" />
                     <Chip label="Rock Climbing" class="md-2 mr-2" />
@@ -12,7 +12,7 @@
                     <Chip label="Tech" class="md-2 mr-2" />
                 </div>
                 <h3>Languages</h3>
-                <div class="md-2 mr-2 flex flex-wrap">
+                <div class="md-2 mr-2 flex align-items-center flex-wrap">
                     <i class="md-2 mr-2 devicon-linux-plain" v-tooltip.bottom="'Linux'"></i>
                     <i class="md-2 mr-2 devicon-apple-plain" v-tooltip.bottom="'Apple'"></i>
                     <i class="md-2 mr-2 devicon-git-plain" v-tooltip.bottom="'Git'"></i>

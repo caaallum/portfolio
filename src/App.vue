@@ -33,6 +33,8 @@ export default {
         navigation: true,
         slidesNavigation: true,
         controlArrows: true,
+        scrollOverflow: true,
+        verticalCentered: true,
       },
     }
   },
@@ -52,9 +54,9 @@ h1, h2, h3, h4, h5, p, .p-button-label {
   font-family: 'Jetbrains Mono' !important;
 }
 
-.fp-overflow {
-  overflow-y: unset !important;
-}
+// .fp-overflow {
+//   overflow-y: unset !important;
+// }
 
 .fp-watermark {
   display: none;
@@ -62,5 +64,6 @@ h1, h2, h3, h4, h5, p, .p-button-label {
 
 img {
   filter: drop-shadow(0 0 0.75rem black);
+  max-width: 100%;
 }
 </style>
