@@ -10,12 +10,16 @@ import Button from 'primevue/button';
 import Timeline from 'primevue/timeline';
 import InputText from 'primevue/inputtext';
 import TextArea from 'primevue/textarea';
+import Toast from 'primevue/toast';
+import ToastService from 'primevue/toastservice';
 
+app.use(ToastService);
 app.component('Toolbar', Toolbar);
 app.component('Button', Button);
 app.component('Timeline', Timeline);
 app.component('InputText', InputText);
 app.component('TextArea', TextArea);
+app.component('Toast', Toast);
 
 // Theme
 import 'primevue/resources/primevue.min.css';

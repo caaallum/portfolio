@@ -1,5 +1,6 @@
 <template>
     <div class="flex align-items-center justify-content-center flex-column">
+        <Toast />
         <h1>Contact me</h1>
         <div class="mb-2">
             <h3>Name: </h3>
@@ -13,7 +14,7 @@
             <h3>Message:</h3>
             <Textarea :autoResize="true" rows="5" cols="30" id="message" v-model="message" />
         </div>
-        <Button label="Submit" />
+        <Button label="Submit" @click="submit()"/>
 
         <div class="mb-2 flex">
             <Button icon="pi pi-github" class="p-button-rounded p-button-text" @click="route('http://github.com/caaallum')" />
@@ -34,6 +35,10 @@ export default {
     methods: {
         route(url) {
             window.open(url, '_blank');
+        },
+        submit() {
+            this.$toast.add({severity: 'error', summary: 'Error sending Message', life: 3000});
+            //this.$toast.add({severity:'success', summary: 'Message sent', life: 300});
         }
     }
 }
