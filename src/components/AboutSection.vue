@@ -3,7 +3,7 @@
         <div class="md-2 mr-2">
             <div class="flex flex-column">
                 <h1>About Me</h1>
-                <h3>Hobies & Interests</h3>
+                <h3>Hobbies & Interests</h3>
                 <div class="md-2 mr-2 flex flex-wrap">
                     <Chip label="Mountain Biking" class="md-2 mr-2" />
                     <Chip label="Skateboarding" class="md-2 mr-2" />
