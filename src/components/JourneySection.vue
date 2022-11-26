@@ -4,7 +4,6 @@
             <template #content="slotProps">
                 <h3>{{slotProps.item.title}}</h3>
                 <h5>{{slotProps.item.time}}</h5>
-                <p>{{slotProps.item.info}}</p>
             </template>
         </Timeline>
     </div>
