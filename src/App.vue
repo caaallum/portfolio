@@ -1,39 +1,58 @@
 <template>
-  <div class="flex flex-column">
-    <div class="mb-2">
-      <Toolbar>
-        <template #start>
-          <Button label="Callum Speirs" class="p-button-text" />
-          <Button label="About" class="p-button-text" />
-          <Button label="Journey" class="p-button-text" />
-        </template>
-        <template #end>
-          <Button class="github p-0" aria-label="Github">
-                <i class="pi pi-github px-2"></i>
-                <span class="px-3">Github</span>
-            </Button>
-          <Button icon="pi pi-gitlab" class="p-button-rounded p-button-text" />
-        </template>
-      </Toolbar>
-    </div>
-    <div class="mb-2">
+<div>
+  <particles-bg type="cobweb" :bg="true" />
+  <full-page :options="options" ref="fullpage" id="fullpage">
+    <div id="hero" class="section">
       <HeroSection />
     </div>
-
-    <ScrollTop />
-  </div>
+    <div id="about" class="section">
+      <AboutSection />
+    </div>
+    <div id="journey" class="section">
+      <JourneySection />
+    </div>
+    <div id="contact" class="section">
+      <ContactSection />
+    </div>
+  </full-page>
+</div>
 </template>
 
 <script>
 import HeroSection from '@/components/HeroSection.vue';
+import AboutSection from '@/components/AboutSection.vue';
+import JourneySection from '@/components/JourneySection.vue';
+import ContactSection from '@/components/ContactSection.vue'
+import { ParticlesBg } from "particles-bg-vue";
 
 export default {
+  data() {
+    return {
+      options: {
+        scrollBar: false,
+        navigation: true,
+        slidesNavigation: true,
+        controlArrows: true,
+      },
+    }
+  },
   components: {
-    HeroSection
+    ParticlesBg, HeroSection, AboutSection, JourneySection, ContactSection
   }
 }
 </script>
 
 <style lang="scss">
+@font-face {
+  font-family: 'Jetbrains Mono';
+  src: local('Jetbrains mono'), url('./assets/jetbrains-mono.ttf') format('truetype');
+}
 
+h1, h2, h3, h4, h5, p, .p-button-label {
+  font-family: 'Jetbrains Mono' !important;
+}
+
+.fp-overflow {
+  overflow-y: unset !important;
+}
 </style>
