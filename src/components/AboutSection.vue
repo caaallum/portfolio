@@ -5,31 +5,11 @@
                 <h1>About Me</h1>
                 <h3>Hobbies & Interests</h3>
                 <div class="md-2 mr-2 flex align-items-center flex-wrap">
-                    <Chip label="Mountain Biking" class="md-2 mr-2" />
-                    <Chip label="Skateboarding" class="md-2 mr-2" />
-                    <Chip label="Rock Climbing" class="md-2 mr-2" />
-                    <Chip label="Surfing" class="md-2 mr-2" />
-                    <Chip label="Clothes" class="md-2 mr-2" />
-                    <Chip label="Tech" class="md-2 mr-2" />
+                    <Chip v-for="hobby in hobbies" class="md-2 mr-2" :label="hobby" />
                 </div>
                 <h3>Languages, Frameworks & Platforms</h3>
                 <div class="md-2 mr-2 flex align-items-center flex-wrap">
-                    <i class="md-2 mr-2 devicon-linux-plain" v-tooltip.bottom="'Linux'"></i>
-                    <i class="md-2 mr-2 devicon-apple-plain" v-tooltip.bottom="'Apple iOS/MacOSX'"></i>
-                    <i class="md-2 mr-2 devicon-android-plain" v-tooltip.bottom="'Android'"></i>
-                    <i class="md-2 mr-2 devicon-git-plain" v-tooltip.bottom="'Git'"></i>
-                    <i class="md-2 mr-2 devicon-github-plain" v-tooltip.bottom="'Github'"></i>
-                    <i class="md-2 mr-2 devicon-gitlab-plain" v-tooltip.bottom="'Gitlab'"></i>
-                    <i class="md-2 mr-2 devicon-cplusplus-plain" v-tooltip.bottom="'C/C++'"></i>
-                    <i class="md-2 mr-2 devicon-drupal-plain" v-tooltip.bottom="'Drupal'"></i>
-                    <i class="md-2 mr-2 devicon-wordpress-plain" v-tooltip.bottom="'Wordpress'"></i>
-                    <i class="md-2 mr-2 devicon-go-plain" v-tooltip.bottom="'Go'"></i>
-                    <i class="md-2 mr-2 devicon-python-plain" v-tooltip.bottom="'Python'"></i>
-                    <i class="md-2 mr-2 devicon-php-plain" v-tooltip.bottom="'PHP'"></i>
-                    <i class="md-2 mr-2 devicon-javascript-plain" v-tooltip.bottom="'JavaScript'"></i>
-                    <i class="md-2 mr-2 devicon-sass-plain" v-tooltip.bottom="'Sass'"></i>
-                    <i class="md-2 mr-2 devicon-mysql-plain" v-tooltip.bottom="'MySQL'"></i>
-                    <i class="md-2 mr-2 devicon-mongodb-plain" v-tooltip.bottom="'MongoDB'"></i>
+                    <i v-for="language in languages" class="md-2 mr-2" :class="'devicon-' + language.icon + '-plain'" v-tooltip.bottom="language.tooltip"></i>
                 </div>
             </div>
         </div>
@@ -48,27 +28,38 @@ export default {
     data() {
         return {
             images: [
-                {
-                    index: '0',
-                    alt: 'mtb1',
-                },
-                {
-                    index: '1',
-                    alt: 'surfing2',
-                },
-                {
-                    index: '2',
-                    alt: 'rocks'
-                },
-                {
-                    index: '3',
-                    alt: 'mtb2'
-                },
-                {
-                    index: '4',
-                    alt: 'surfing'
-                }
-            ]
+                { index: '0', alt: 'mtb1', },
+                { index: '1', alt: 'surfing2', },
+                { index: '2', alt: 'rocks' },
+                { index: '3', alt: 'mtb2' },
+                { index: '4', alt: 'surfing' }
+            ],
+            hobbies: [
+                'Mountain Biking',
+                'Skateboarding',
+                'Rock Climbing',
+                'Surfing',
+                'Clothes',
+                'Tech',
+            ],
+            languages: [
+                { icon: 'linux', tooltip: 'Linux' },
+                { icon: 'apple', tooltip: 'Apple iOS/MacOSX' },
+                { icon: 'android', tooltip: 'Android' },
+                { icon: 'git', tooltip: 'Git' },
+                { icon: 'github', tooltip: 'Github' },
+                { icon: 'gitlab', tooltip: 'Gitlab'},
+                { icon: 'cplusplus', tooltip: 'C/C++' },
+                { icon: 'drupal', tooltip: 'Drupal' },
+                { icon: 'wordpress', tooltip: 'Wordpress' },
+                { icon: 'go', tooltip: 'Go' },
+                { icon: 'python', tooltip: 'Python' },
+                { icon: 'php', tooltip: 'PHP' },
+                { icon: 'javascript', tooltip: 'JavaScript' },
+                { icon: 'sass', tooltip: 'Sass' },
+                { icon: 'mysql', tooltip: 'MySQL' },
+                { icon: 'mongodb', tooltip: 'MongoDB' },
+            ],
         }
     }
 }
