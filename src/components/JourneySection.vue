@@ -31,7 +31,7 @@ export default {
                 },
                 {
                     id: 1,
-                    title: 'City Coventry College',
+                    title: 'City College Coventry',
                     time: '2015-2017',
                     display: false,
                     readMore: 'I studied Game Development at City College Coventry',
@@ -64,12 +64,6 @@ export default {
         toggle(e) {
             this.timeline[e.currentTarget.id].display = !this.timeline[e.currentTarget.id].display;
         },
-        show() {
-            this.display = true;
-        },
-        hide() {
-            this.display = false;
-        }
     }
 }
 </script>
