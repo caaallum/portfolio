@@ -18,29 +18,20 @@
 </div>
 </template>
 
-<script>
+<script setup>
 import HeroSection from '@/components/HeroSection.vue';
 import AboutSection from '@/components/AboutSection.vue';
 import JourneySection from '@/components/JourneySection.vue';
 import ContactSection from '@/components/ContactSection.vue'
 import { ParticlesBg } from "particles-bg-vue";
 
-export default {
-  data() {
-    return {
-      options: {
-        scrollBar: false,
-        navigation: true,
-        slidesNavigation: true,
-        controlArrows: true,
-        scrollOverflow: true,
-        verticalCentered: true,
-      },
-    }
-  },
-  components: {
-    ParticlesBg, HeroSection, AboutSection, JourneySection, ContactSection
-  }
+const options = {
+  scrollBar: false,
+  navigation: true,
+  slidesNavigation: true,
+  controlArrows: true,
+  scrollOverflow: true,
+  verticalCentered: true,
 }
 </script>
 
