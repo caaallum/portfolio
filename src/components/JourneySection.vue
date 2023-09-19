@@ -51,7 +51,7 @@ const timeline = ref([
     title: 'Software Development at Aston University',
     time: '2021-present',
     display: false,
-    readMore: 'In 2021 I started work getting my University degree at aston University. Juggling work and uni has been a challenge but it has helped me get better at time management and organisation.',
+    readMore: 'In 2021 I started work getting my University degree at Aston University. Juggling work and uni has been a challenge but it has helped me get better at time management and organisation.',
   }
 ])
 
