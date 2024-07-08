@@ -46,13 +46,6 @@ const timeline = ref([
     display: false,
     readMore: 'I started at Network through baltic on a BTEC Level 3. Completing the course with a Distinction',
   },
-  {
-    id: 4,
-    title: 'Software Development at Aston University',
-    time: '2021-present',
-    display: false,
-    readMore: 'In 2021 I started work getting my University degree at Aston University. Juggling work and uni has been a challenge but it has helped me get better at time management and organisation.',
-  }
 ])
 
 const toggle = (e) => {
